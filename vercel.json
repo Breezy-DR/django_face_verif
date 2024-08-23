@@ -9,5 +9,13 @@
             "src": "/(.*)",
             "dest": "restapi_faceverif/wsgi.py"
         }
-    ]
+    ],
+    "build": {
+    "env": {
+      "INSTALL_BUILD_DEPS": "1"
+    },
+    "commands": {
+      "preinstall": "sh build.sh"
+    }
+  }
 }
